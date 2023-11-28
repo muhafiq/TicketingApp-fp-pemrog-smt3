@@ -1,0 +1,7 @@
+*.exe
+*.dll
+*.pdb
+packages
+.nuget
+.env
+*.suo
