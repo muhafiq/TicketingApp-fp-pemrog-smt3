@@ -23,3 +23,5 @@ D:\kuliah\semester3\pemrogramanLanjut\TicketingApp\TicketingApp\bin\Debug\System
 D:\kuliah\semester3\pemrogramanLanjut\TicketingApp\TicketingApp\bin\Debug\System.Numerics.Vectors.xml
 D:\kuliah\semester3\pemrogramanLanjut\TicketingApp\TicketingApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\kuliah\semester3\pemrogramanLanjut\TicketingApp\TicketingApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\kuliah\semester3\pemrogramanLanjut\TicketingApp\TicketingApp\obj\Debug\TicketingApp.csprojResolveAssemblyReference.cache
+D:\kuliah\semester3\pemrogramanLanjut\TicketingApp\TicketingApp\obj\Debug\TicketingApp.Views.frmLogin.resources

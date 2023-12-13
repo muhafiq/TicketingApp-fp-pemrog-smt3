@@ -87,10 +87,11 @@
     <Compile Include="Models\Context\DbContext.cs" />
     <Compile Include="Models\Entity\Event.cs" />
     <Compile Include="Models\Entity\Stage.cs" />
-    <Compile Include="Models\Entity\Ticket.cs" />
+    <Compile Include="Models\Entity\Transaksi.cs" />
     <Compile Include="Models\Entity\User.cs" />
     <Compile Include="Models\Repository\EventRepository.cs" />
-    <Compile Include="Models\Repository\TicketRepository.cs" />
+    <Compile Include="Models\Repository\StageRepository.cs" />
+    <Compile Include="Models\Repository\TransaksiRepository.cs" />
     <Compile Include="Models\Repository\UserRepository.cs" />
     <Compile Include="Views\frmHome.cs">
       <SubType>Form</SubType>
@@ -112,6 +113,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmRegister.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,7 +143,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Docs\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -18,7 +18,7 @@ namespace TicketingApp.Models.Repository
             _conn = context.Conn;
         }
 
-        public User Login(User user)
+        public User GetUserToLogin(User user)
         {
             User userToAuth = new User();
             string query = @"SELECT * FROM users WHERE email=@email";
@@ -46,7 +46,7 @@ namespace TicketingApp.Models.Repository
         }
 
 
-        public int Register(User newUser)
+        public int RegisterNewUser(User newUser)
         {
             int result = 0;
             string query = @"INSERT INTO users (nama, password, email, no_tlp) VALUES (@nama, @password, @email, @noTlp)";
@@ -70,7 +70,7 @@ namespace TicketingApp.Models.Repository
             return result;
         }
 
-        public int UpdateProfile(User newUser)
+        public int UpdateProfileUser(User newUser)
         {
             int result = 0;
             string query = @"UPDATE users SET nama=@nama, password=@password, email=@email, no_tlp=@noTlp WHERE id=@id";

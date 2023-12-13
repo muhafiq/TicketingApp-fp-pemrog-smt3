@@ -13,5 +13,6 @@ namespace TicketingApp.Models.Entity
         public string Jenis { get; set; }
         public string Tanggal { get; set; }
         public string Lokasi { get; set; }
+        public string UserId { get; set; }
     }
 }

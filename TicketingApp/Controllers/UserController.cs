@@ -20,7 +20,7 @@ namespace TicketingApp.Controllers
             using (DbContext context = new DbContext()) 
             {
                 _repository = new UserRepository(context);
-                userFromDb = _repository.Login(userToAuth);
+                userFromDb = _repository.GetUserToLogin(userToAuth);
 
                 // check apakah data ada
                 if (userFromDb == null)
@@ -40,6 +40,11 @@ namespace TicketingApp.Controllers
                 }
 
             }
+
+        }
+
+        public void Register()
+        {
 
         }
 
